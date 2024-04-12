@@ -1,0 +1,219 @@
+.landingPage-body-wrapper{
+    background-color:#fff5da1d;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    left: -10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.text-overlay h1 {
+    margin-bottom: -30px;
+    font-size: 6vw;
+    color: #f9f9d8;
+}
+
+.text-overlay p {
+    margin-bottom: 15px;
+    text-align:unset;
+    font-size: 1.2vw;
+    width: fit-content;
+    line-height: 1.5;
+    color: #d5a13b;
+}
+
+.landing-page-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+}
+
+.landing-page-buttons button {
+    padding: 1.5vw 2.3vw;
+    background-color: #f5b539;
+    color: #614051;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+
+}
+.commonChallenges-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: center;
+    align-items:center;
+    margin: -20px 40px 30px;
+}
+.commonChallenges-title h1{
+    font-size: 6vw;
+    margin-bottom: -10px;
+}
+.commonChallenges-title p{
+    text-align: center;
+    width: 70vw;
+    font-size: 1.2vw;
+}
+.commonChallenges-gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 1px 5px;
+    padding: 0px 10% 0px;
+}
+
+.gridItem-flexContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gridItem-flexContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid black 1px;
+    
+}
+.commonChallenges-gridContainer p{
+    margin-top: -10px;
+}
+.Services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Services-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Services-title h2{
+    font-size: 6vw;
+    
+}
+.Services-gridContainer{
+    margin: -1vw 0px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.Services-gridContainer-item1{
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.Services-gridContainer-item3{
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.Services-gridContainer img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.Services-gridContainer .containerTwo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+
+}
+.Services-gridContainer-containerTwo-item1{
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.Services-gridContainer-containerTwo-item2{
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.Services-gridContainer .containerTwo img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.Services-gridContainer P{
+ margin-top: -15px;
+ text-align: start;
+}
+.Services-gridContainer h2{
+ text-align: center;
+}
+
+@keyframes pulse {
+    from,to{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+
+/* on hover Animations */
+.gridItem-flexContainer img:hover {
+    animation: pulse 1s  alternate;
+}
+
+.Services-gridContainer-item1,
+.Services-gridContainer-containerTwo-item1,
+.Services-gridContainer-containerTwo-item2,
+.Services-gridContainer-item3 {
+ 
+  position: relative; 
+}
+
+.Services-gridContainer-item1:hover,
+.Services-gridContainer-containerTwo-item1:hover,
+.Services-gridContainer-containerTwo-item2:hover,
+.Services-gridContainer-item3:hover {
+  transform: translateY(-15px); 
+  transition: transform 0.4s ease; 
+}
+
