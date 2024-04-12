@@ -21,3 +21,12 @@ To run Healr locally on your machine, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/healr.git
+2. Go to the HealR Directory
+   ```bash
+   cd healr
+3. Install NPM Modules 
+   ```bash
+   npm install
+4. Command to run 
+   ```bash
+   npm run dev
