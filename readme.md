@@ -1,3 +1,4 @@
+#Project Status - discontinued
 # Healr - Mental Health Support Platform
 
 Welcome to Healr, a comprehensive mental health support platform designed to provide accessible therapy options, foster a supportive community, and promote holistic well-being for individuals facing mental health challenges.
